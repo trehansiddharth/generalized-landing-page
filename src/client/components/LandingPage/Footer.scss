@@ -1,0 +1,70 @@
+@import 'LandingPage.scss';
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #505050;
+  align-items: center;
+  padding-left: $page-margin;
+  padding-right: $page-margin;
+  padding-bottom: 80px;
+
+  .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 50px;
+    color: rgb(255, 255, 255);
+    margin-top: 105px;
+    margin-bottom: 50px;
+  }
+
+  .details {
+    font-size: 23px;
+    line-height: 32px;
+    color: rgb(211, 211, 211);
+    margin-bottom: 50px;
+    width: 60%;
+  }
+
+  .repeat-action-button {
+    background-color: $primary-color;
+    border-radius: $action-button-border-radius;
+    width: 500px;
+    text-align: center;
+
+    text-decoration: none;
+    font-size: $action-button-font-size-desktop;
+    font-weight: bold;
+    line-height: $action-button-size-desktop;
+    color: #505050;
+
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: $max-mobile-viewport-width) {
+  #footer {
+    height: 100%;
+
+    .title {
+      font-size: 36px;
+      line-height: 42px;
+      margin-top: 70px;
+      margin-bottom: 40px;
+    }
+
+    .details {
+      font-size: 20px;
+      line-height: 28px;
+      width: 100%;
+    }
+
+    .repeat-action-button {
+      width: 100%;
+      font-size: $action-button-font-size-mobile;
+      line-height: $action-button-size-mobile;
+    }
+  }
+}

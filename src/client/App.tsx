@@ -1,7 +1,9 @@
 import React from 'react';
+import './App.scss';
+import LandingPage from 'LandingPage/LandingPage';
 
 export default function App() {
   return (
-    <h1>Hello World!</h1>
+    <LandingPage />
   );
 }

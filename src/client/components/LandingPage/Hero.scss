@@ -1,0 +1,134 @@
+@import 'LandingPage.scss';
+
+$tagline-color: black;
+$subtagline-color: #6d6d6d;
+$apply-text-color: rgb(167, 167, 167);
+
+$pitch-and-signup-top-offset-desktop: 60px;
+$pitch-and-signup-top-offset-mobile: 30px;
+
+$tagline-font-size-desktop: 40px;
+$tagline-font-size-mobile: 34px;
+
+$tagline-line-height-desktop: 50px;
+$tagline-line-height-mobile: 42px;
+
+$tagline-subtagline-space-desktop: 35px;
+$tagline-subtagline-space-mobile: 20px;
+
+$subtagline-font-size-desktop: 20px;
+$subtagline-font-size-mobile: 18px;
+
+$subtagline-line-height-desktop: 26px;
+$subtagline-line-height-mobile: 26px;
+
+$subtagline-action-button-space-desktop: 50px;
+$subtagline-action-button-space-mobile: 30px;
+
+$action-button-apply-text-space-desktop: 20px;
+$action-button-apply-text-space-mobile: 15px;
+
+$frontpage-image-margin-top-mobile: 20px;
+$frontpage-image-margin-bottom-mobile: 30px;
+
+.hero {
+  margin-top: -$nav-height-desktop;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+  padding-left: $page-margin;
+  padding-right: $page-margin;
+}
+
+.pitch-and-signup {
+  width: $pitch-and-signup-width-desktop;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: left;
+  margin-top: $pitch-and-signup-top-offset-desktop;
+}
+
+.hero-image {
+  justify-content: center;
+  align-items: right;
+}
+
+#frontpage-image {
+  width: 85%;
+}
+
+div.tagline {
+  font-style: normal;
+  font-weight: bold;
+  font-size: $tagline-font-size-desktop;
+  line-height: $tagline-line-height-desktop;
+  color: $tagline-color;
+  width: $pitch-and-signup-width-desktop;
+}
+
+div.subtagline {
+  font-style: normal;
+  font-weight: 500;
+  font-size: $subtagline-font-size-desktop;
+  line-height: $subtagline-line-height-desktop;
+  color: $subtagline-color;
+  width: 100%;
+  margin-top: $tagline-subtagline-space-desktop;
+  margin-bottom: $subtagline-action-button-space-desktop;
+}
+
+.action-button {
+  background-color: $primary-color;
+  border-radius: $action-button-border-radius;
+  width: 100%;
+  text-align: center;
+
+  text-decoration: none;
+  font-size: $action-button-font-size-desktop;
+  font-weight: bold;
+  line-height: $action-button-size-desktop;
+  color: white;
+
+  cursor: pointer;
+}
+
+@media screen and (max-width: $max-mobile-viewport-width) {
+  .hero {
+    flex-direction: column;
+    margin-top: 0px;
+    height: 100%;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    align-items: center;
+  }
+  div.pitch-and-signup {
+    align-items: center;
+    width: $pitch-and-signup-width-mobile;
+    margin-top: $pitch-and-signup-top-offset-mobile;
+  }
+  div.tagline {
+    font-size: $tagline-font-size-mobile;
+    line-height: $tagline-line-height-mobile;
+    width: $pitch-and-signup-width-mobile;
+  }
+  div.subtagline {
+    font-size: $subtagline-font-size-mobile;
+    line-height: $subtagline-line-height-mobile;
+    width: 100%;
+    margin-top: $tagline-subtagline-space-mobile;
+    margin-bottom: $subtagline-action-button-space-mobile;
+  }
+  .action-button {
+    width: 100%;
+    font-size: $action-button-font-size-mobile;
+    line-height: $action-button-size-mobile;
+  }
+  #frontpage-image {
+    width: calc(#{$pitch-and-signup-width-mobile} + 30px);
+    margin-top: $frontpage-image-margin-top-mobile;
+    margin-bottom: $frontpage-image-margin-bottom-mobile;
+  }
+}

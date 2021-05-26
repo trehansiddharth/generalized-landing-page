@@ -35,7 +35,6 @@ module.exports = {
     alias: {
       Components: path.resolve(__dirname, 'src/client/components'),
       LandingPage: path.resolve(__dirname, 'src/client/components/LandingPage'),
-      Profiles: path.resolve(__dirname, 'src/client/components/Profiles'),
       Images: path.resolve(__dirname, 'src/client/assets'),
       Util: path.resolve(__dirname, 'src/client/util'),
     },

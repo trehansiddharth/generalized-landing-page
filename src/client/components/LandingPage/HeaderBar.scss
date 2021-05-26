@@ -1,0 +1,62 @@
+@import 'LandingPage.scss';
+
+$nav-vertical-padding: 15px;
+
+$logotype-font-size-desktop: 28px;
+$logotype-font-size-mobile: 26px;
+
+$logo-logotype-space-desktop: 13px;
+$logo-logotype-space-mobile: 10px;
+
+#header-bar {
+  width: calc(100vw - 2 * #{$page-margin});
+  height: calc(#{$nav-height-desktop} - 2 * #{$nav-vertical-padding});
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: $nav-vertical-padding;
+  padding-bottom: $nav-vertical-padding;
+  padding-left: $page-margin;
+  padding-right: $page-margin;
+
+  #nav-logo-logotype {
+    display: contents;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $logotype-font-size-desktop;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  #nav-logo-logotype > #logotype {
+    margin-top: 5px;
+  }
+
+  #nav-logo-logotype:hover {
+    // TODO: how to make logo become emphasized on hover?
+  }
+
+  #logo-svg {
+    height: 100%;
+    position: relative;
+    margin-right: $logo-logotype-space-desktop;
+  }
+}
+
+@media screen and (max-width: $max-mobile-viewport-width) {
+  #header-bar {
+    padding-left: calc(50vw - #{$pitch-and-signup-width-mobile} / 2);
+    padding-right: calc(50vw - #{$pitch-and-signup-width-mobile} / 2);
+    width: $pitch-and-signup-width-mobile;
+    height: calc(#{$nav-height-mobile} - 2 * $nav-vertical-padding);
+
+    #logo-svg {
+      margin-right: $logo-logotype-space-mobile;
+    }
+
+    #nav-logo-logotype {
+      font-size: $logotype-font-size-mobile;
+    }
+  }
+}
