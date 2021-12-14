@@ -1,8 +1,8 @@
 import React from 'react';
-import HeaderBar from 'LandingPage/HeaderBar';
-import Hero from 'LandingPage/Hero';
-import { Highlight, Highlights } from 'LandingPage/Highlights';
-import Footer from 'LandingPage/Footer';
+import HeaderBar from 'Components/LandingPage/HeaderBar';
+import Hero from 'Components/LandingPage/Hero';
+import { Highlight, Highlights } from 'Components/LandingPage/Highlights';
+import Footer from 'Components/LandingPage/Footer';
 import './LandingPage.scss';
 
 /**
