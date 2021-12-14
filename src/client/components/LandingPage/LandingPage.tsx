@@ -5,6 +5,10 @@ import { Highlight, Highlights } from 'LandingPage/Highlights';
 import Footer from 'LandingPage/Footer';
 import './LandingPage.scss';
 
+/**
+ * generalized-landing-page: All of the strings below need to be changed in
+ * order to specialize this repository for your needs.
+ */
 var logoUrl = "public/image/logo.svg";
 var companyName = "companyName";
 var tagline = "Tagline";

@@ -1,7 +1,7 @@
 {
   "name": "generalized-landing-page",
   "version": "1.0.0",
-  "description": "Boilerplate for a generalized landing page for startup ideas",
+  "description": "generalized-landing-page",
   "main": "src/server/index.js",
   "engines": {
     "node": "16.x"
