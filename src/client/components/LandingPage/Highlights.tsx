@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react';
 import './Highlights.scss';
 
-type Alignment = "left" | "right";
-type HighlightProps = {
+export type Alignment = "left" | "right";
+export type HighlightProps = {
   caption: string,
   subtext: string,
   imageUrl: string,

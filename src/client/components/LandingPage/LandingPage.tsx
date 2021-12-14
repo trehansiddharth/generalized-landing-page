@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderBar from 'Components/LandingPage/HeaderBar';
 import Hero from 'Components/LandingPage/Hero';
-import { Highlight, Highlights } from 'Components/LandingPage/Highlights';
+import { Highlight, Highlights, Alignment, HighlightProps } from 'Components/LandingPage/Highlights';
 import Footer from 'Components/LandingPage/Footer';
 import './LandingPage.scss';
 
@@ -19,7 +19,7 @@ var heroImageUrl = "public/image/hero_image.png";
 var highlightsTitle = "Title of highlights panel";
 var footerTitle = "Title of footer panel";
 var footerDetails = "Details in footer panel";
-var highlights = [
+var highlights : HighlightProps[] = [
   {
     caption: "Highlight 1",
     subtext: "Subtext for highlight 1",

@@ -13,7 +13,7 @@
     "server": "nodemon src/server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-prebuild": "yarn install",
-    "type-check": "tsc --noEmit",
+    "type-check": "tsc --project tsconfig.json --noEmit",
     "type-check-watch": "yarn run type-check -- --watch"
   },
   "author": "Sid Trehan",
