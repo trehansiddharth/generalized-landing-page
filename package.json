@@ -16,7 +16,7 @@
     "type-check": "tsc --project tsconfig.json --noEmit",
     "type-check-watch": "yarn run type-check -- --watch"
   },
-  "author": "Sid Trehan",
+  "author": "generalized-landing-page",
   "license": "ISC",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
