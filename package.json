@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Boilerplate for a generalized landing page for startup ideas",
   "main": "src/server/index.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "build": "webpack --mode production",
     "start": "node src/server/index.js",
